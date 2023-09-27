@@ -1,16 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Assinatura</title>
-</head>
-<body>
-    <div style="background-image: url(https://github.com/CaioGerminari/Assinatura_html/blob/main/zu7pBVQ.png?raw=true); width: 100%; height: 450px;">
-        <span style="font-family: Verdana, sans-serif; color: #000080; font-weight: bold; font-size: 11pt; line-height: 13pt;">
-            Caio Alexandre Germinari
-        </span>
+    <style>
+      .assinatura {
+        background-image: url(https://github.com/CaioGerminari/Assinatura_html/blob/main/zu7pBVQ.png?raw=true);
+        background-repeat: no-repeat;
+        background-size: 100% auto;
+        min-width: 760px;
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: flex-start;
+      }
+
+      .assinatura span {
+        font-family: Verdana, sans-serif;
+        color: #000080;
+        font-weight: bold;
+        font-size: 14pt;
+        line-height: 40px;
+      }
+
+      .assinatura .info {
+        text-align: left;
+        padding: 8.5rem 10%;
+      }
+
+      @media (max-width: 760px) {
+        .assinatura {
+          background-image: none; /* Oculta a imagem de fundo */
+        }
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="assinatura">
+      <div class="info">
+        <span>Nome do Usuário</span><br />
+        <span>Telefone: (123) 456-7890</span><br />
+        <span>E-mail: email@example.com</span><br />
+        <span>Cargo: Cargo do Usuário</span>
+      </div>
     </div>
-    
-</body>
+  </body>
 </html>
